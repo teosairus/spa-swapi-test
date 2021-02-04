@@ -1,0 +1,17 @@
+.main-container {
+  margin: unset !important;
+  padding: 1rem 2rem;
+  width: 100% !important;
+}
+
+.main-error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh !important;
+}
+
+.main-error-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

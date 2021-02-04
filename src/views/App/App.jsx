@@ -1,25 +1,23 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Header from "../../widgets/Header";
 import Main from "../Main";
-import GetFilms from "../../httpRequests/GetFilms";
+
 import "./app-styles.scss";
 
 const App = () => {
-  useEffect(() => {
-    GetFilms().then((res) => {
-      console.log(res);
-    });
-  }, []);
   return (
-    <>
+    <div className="app-container">
       <Header />
       <Switch>
+        <Route path="/people">
+          <Main page="people" />
+        </Route>
         <Route path="/">
-          <Main />
+          <Main page="films" />
         </Route>
       </Switch>
-    </>
+    </div>
   );
 };
 

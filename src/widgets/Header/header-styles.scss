@@ -1,0 +1,40 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  width: 100% !important;
+  padding: 1rem 2rem;
+  background-color: #484a47;
+  color: white;
+  margin: unset !important;
+}
+
+.header-logo {
+  width: 10%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-nav-link {
+  text-decoration: none !important;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 0 2rem;
+}
+
+.header-nav-link-active {
+  text-decoration: none !important;
+  color: #feff00;
+  font-size: 1.2rem;
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header-logo {
+    width: 2rem;
+  }
+}
